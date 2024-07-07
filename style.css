@@ -10,6 +10,10 @@ html,body{
     width:100%;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #main{
     height:100%;
     width:100%;
@@ -361,8 +365,8 @@ html,body{
 }
 
 .elem img{
-    height:80%;
-    width:100%;
+    height:7rem;
+    width:8rem;
     position:absolute;
     border-radius: 50%;
     left:12%;
@@ -372,9 +376,33 @@ html,body{
     transition:all ease 0.7s;
 }
 
+.elem:nth-last-child(3) img {
+    left: 40%;
+  }
+  
 .elem:hover img{
     opacity:1;
     left:24%;
+}
+#elem-special{
+    position: absolute;
+    opacity:0;
+    left:12%;
+    transition: all ease 0.7s;
+}
+#elem-special h1{
+    font-size: 2.6vw;
+    font-weight: 500;
+}
+#elem-special h5{
+    font-size:0.9vw;
+    padding-left: 0.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.elem:hover #elem-special{
+    opacity:1;
+    left:20%;
 }
 .elem:nth-last-child(1){
     border-bottom: 2px solid #000;
@@ -389,26 +417,18 @@ html,body{
 }
 .elem .elem-part2{
     width:45%;
-
 }
 
 .elem-part2 h1{
     font-size: 2.7vw;
     font-weight: 500;
-
 }
 
-.elem-part h5{
-    font-size:0.8vw;
+.elem-part2 h5{
+    font-size:0.9vw;
+    padding-left: 0.1rem;
     font-weight: 600;
     text-transform: uppercase;
-}
-
-.elem:nth-last-child(1) img{
-    left:40%;
-}
-.elem:nth-last-child(3) img{
-    left:40%;
 }
 
 .elem:hover{
