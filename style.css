@@ -321,14 +321,14 @@ body{
     object-fit: cover;
 }
 
-#image-cont{
+.image-cont{
     background-color: aquamarine;
     height:70%;
     width:91%;
     margin: 5rem 4rem;
 }
 
-#image-cont img{
+.image-cont img{
     height:100%;
     width:100%;
     object-fit:cover;
@@ -433,6 +433,23 @@ body{
 
 .elem:hover{
     background-color:#e6e6e6;
+}
+#shot{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#left-img{
+    background-color: aquamarine;
+    height:100%;
+    width:50%;
+    /* object-fit: cover; */
+}
+#pics{
+    display:flex;
+    
 }
 
 #marque{
