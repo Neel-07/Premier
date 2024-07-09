@@ -435,21 +435,59 @@ body{
     background-color:#e6e6e6;
 }
 #shot{
-    height:100%;
+    /* background-color: red; */
+    height:70%;
     width:100%;
+    padding: 0 4rem;
+    margin-top: -1rem;
     display:flex;
+    gap:2.5rem;
     justify-content: space-between;
     align-items: center;
 }
 #left-img{
     background-color: aquamarine;
     height:100%;
-    width:50%;
-    /* object-fit: cover; */
+    width:54%;
+    
+}
+#left-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.shot-content{
+ width:46%;
+}
+.shot-content h1{
+  font-family: monument;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.shot-content h3{
+    font-size: 1.4rem;
+    width:52%;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.shot-content p{
+    /* font-size: 1.5rem; */
+    margin-bottom: 3rem;
+    font-weight: 500;
 }
 #pics{
     display:flex;
-    
+    gap:1rem;
+}
+#pics img:first-child{
+ height:300px;
+ width:280px;
+}
+#pics img:nth-child(2){
+    height:300px;
+    width:280px;
 }
 
 #marque{
