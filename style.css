@@ -239,7 +239,8 @@ body{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding:4rem;
+    padding: 4rem;
+    
 }
 #page2-part1{
     height:100%;
@@ -564,6 +565,20 @@ body{
     to{
         transform:translateX(calc(-100% - 20px));
     }
+}
+
+
+#blog{
+    display:grid;
+    grid-template-rows: repeat(2,0.5fr);
+    grid-template-columns: repeat(3,4fr);
+    gap:1rem;
+    margin-top: 6rem;
+    padding: 0 4rem;
+}
+#blog h1{
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 #footer{
